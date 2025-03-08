@@ -49,7 +49,7 @@ async def approve(_, m: Message):
         text1 = random.choice(txt1)
         text2 = random.choice(txt2)
 
-        await app.send_photo(
+        await app.send_video(
             kk.id,
             img,
             caption="<blockquote></b>𝐈𝐧𝐬𝐭𝐚𝐧𝐭 𝐕𝐢𝐫𝐚𝐥 𝐌𝐨𝐝𝐞𝐥 𝐕𝐢𝐝𝐞𝐨 \n\n𝐂𝐥𝐢𝐜𝐤 𝐎𝐧 𝐁𝐞𝐥𝐨𝐰 𝐁𝐮𝐭𝐭𝐨𝐧 𝐓𝐨 𝐆𝐞𝐭 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝 𝐋𝐢𝐧𝐤 👇👇</blockquote></b>",
@@ -87,7 +87,7 @@ async def start(_, m: Message):
             )
 
             add_user(user.id)
-            await m.reply_photo(
+            await m.reply_video(
                 random.choice(gif),
                 caption=f"<b><blockquote>𝒀𝒐𝒖𝒓 𝑽𝒊𝒅𝒆𝒐 𝒊𝒔 𝑹𝒆𝒂𝒅𝒚. 𝑪𝒍𝒊𝒄𝒌 𝒉𝒆𝒓𝒆 𝑻𝒐 𝑫𝒐𝒘𝒏𝒍𝒐𝒂𝒅 👇👇👇</blockquote></b>",
                 reply_markup=keyboard
